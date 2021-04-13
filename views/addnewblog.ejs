@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include("./parts/head") %>
+</head>
+<body>
+    <%-include("./parts/nav") %>
+    <section>
+        <h1><%= title %></h1>
+        <form action="/admin/add" method="post">
+            <input type="text" name="title" placeholder="Title" required>
+            <input type="text" name="short" placeholder="Short" required>
+            <input type="text" name="long" placeholder="Long" required>
+            <input type="submit" value="Submit"></form>
+    </section>
+</body>
+</html>
