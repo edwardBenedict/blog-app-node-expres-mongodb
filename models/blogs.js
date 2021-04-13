@@ -5,15 +5,15 @@ const blogSchema = new Schema(
   {
     title: {
       type: String,
-      require: true,
+      required: true,
     },
     short: {
       type: String,
-      require: true,
+      required: true,
     },
     long: {
       type: String,
-      require: true,
+      required: true,
     },
   },
   { timestamps: true }
